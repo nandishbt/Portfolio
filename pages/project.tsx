@@ -33,7 +33,10 @@ export default function Project() {
                   <p className="SpaceGroteskRegular text-xl py-8">
                     {n.descriptionHtml}
                   </p>
-                  <a href={n.external} target="_blank" rel="noreferrer">
+
+                  <div className="flex gap-3">
+                    
+                { n.external &&  <a href={n.external} target="_blank" rel="noreferrer">
                     <div className="relative block group  my-7 cursor-pointer ml-3">
                       <span className="absolute inset-0 border-2  border-[#188AEC] rounded-lg"></span>
                       <div className="transition bg-[#188AEC] text-white rounded-lg group-hover:-translate-x-0  group-hover:-translate-y-0 -translate-x-3 translate-y-2">
@@ -42,7 +45,20 @@ export default function Project() {
                         </div>
                       </div>
                     </div>
+                  </a>}
+
+                  <a href={n.github} target="_blank" rel="noreferrer">
+                    <div className="relative block group  my-7 cursor-pointer ml-3">
+                      <span className="absolute inset-0 border-2  border-[#188AEC] rounded-lg"></span>
+                      <div className="transition bg-[#188AEC] text-white rounded-lg group-hover:-translate-x-0  group-hover:-translate-y-0 -translate-x-3 translate-y-2">
+                        <div className="py-3 px-10 ">
+                          <p className="mt-1 text-xl">View code</p>
+                        </div>
+                      </div>
+                    </div>
                   </a>
+                  </div>
+                  
                 </div>
                 <img
                   src={n.cover}

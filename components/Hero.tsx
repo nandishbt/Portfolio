@@ -1,7 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import Link from "next/link";
 
 export default function Hero() {
+
+  function handleWhatsAppClick() {
+    var phoneNumber = "+916361464986"; 
+    var message = "Hello, I would like to inquire about..."; 
+
+    // Build the WhatsApp URL
+    var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+    // Redirect to the WhatsApp URL
+    window.location.href = whatsappLink;
+  }
+
+
+  
   return (
     <div className="relative w-full  container px-4 mx-auto flex flex-col justify-center items-center h-screen -mt-20 ">
       <div className="bg-[#60A5FA] h-[120px] top-36 right-20 absolute w-[120px] rounded-full blur-[90px] filter "></div>
@@ -23,14 +38,30 @@ export default function Hero() {
           </p>
         </div>
         <>
-          <div className="relative block group  my-7 ml-4 cursor-pointer">
+
+        <div className="flex gap-5">
+
+        <div className="relative block group  my-7 ml-4 cursor-pointer">
             <span className="absolute inset-0 border-2  border-[#188AEC] rounded-lg"></span>
             <div className="transition bg-[#188AEC] text-white rounded-lg group-hover:-translate-x-0  group-hover:-translate-y-0 -translate-x-3 translate-y-2">
               <div className="py-3 px-10 ">
-                <p className="mt-1 text-xl">Say Hello</p>
+                <p onClick={handleWhatsAppClick} className="mt-1 text-xl">Say Hello</p>
               </div>
             </div>
           </div>
+
+          <div className="relative block group  my-7 ml-4 cursor-pointer">
+            <span className="absolute inset-0 border-2  border-green-500 rounded-lg"></span>
+            <div className="transition bg-green-500 text-white rounded-lg group-hover:-translate-x-0  group-hover:-translate-y-0 -translate-x-3 translate-y-2">
+              <div className="py-3 px-10 ">
+                <Link href={'https://drive.google.com/file/d/1dumUNwVVfktzQXTSvnZ4spkrmIy-ZXOT/view?usp=sharing'} ><p className="mt-1 text-xl">My Resume</p></Link>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+
+         
         </>
       </div>
     </div>

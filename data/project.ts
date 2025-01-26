@@ -1,12 +1,12 @@
 export const project = [
     {
         flexrow:"flex-row",
-        title: "DevUi",
-        cover: "/Group2.png",
-        github: "https://github.com/kumard3/dev.ui",
-        external: "https://dev-ui.vercel.app/",
+        title: "Food Delivery App",
+        cover: "/foodDel.jpg",
+        github: "https://github.com/nandishbt/Food-Del",
+        external: "https://food-del-frontend-meeq.onrender.com/",
         descriptionHtml:
-            "DevUI is a free, open-source collection of UI components and templates based on Tailwind CSS.",
+            "Engineered a full-stack MERN-based food delivery platform",
         techs: ["React", "Javascript", "Next.Js", "Tailwind CSS"],
     },
     {

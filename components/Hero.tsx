@@ -54,7 +54,7 @@ export default function Hero() {
             <span className="absolute inset-0 border-2  border-green-500 rounded-lg"></span>
             <div className="transition bg-green-500 text-white rounded-lg group-hover:-translate-x-0  group-hover:-translate-y-0 -translate-x-3 translate-y-2">
               <div className="py-3 px-10 ">
-                <Link href={'https://drive.google.com/file/d/1dumUNwVVfktzQXTSvnZ4spkrmIy-ZXOT/view?usp=sharing'} ><p className="mt-1 text-xl">My Resume</p></Link>
+                <Link href={'https://drive.google.com/file/d/1Gxd-TpezfAiac5RF4HLSODCuMPpQsVdN/view?usp=sharing'} ><p className="mt-1 text-xl">My Resume</p></Link>
               </div>
             </div>
           </div>

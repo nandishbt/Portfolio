@@ -64,7 +64,7 @@ export default function Project() {
                   src={n.cover}
                   width="500"
                   height="500"
-                  className="rounded-lg"
+                  className="rounded-lg mb-3"
                 />
               </div>
             );

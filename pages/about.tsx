@@ -33,7 +33,7 @@ export default function About() {
       <div className="SpaceGroteskRegular text-[20px] sm:text-[24px]  max-w-5xl mt-3">
         <p className="SpaceGroteskRegular text-[20px] sm:text-[24px]  py-5">
           An enthusiastic full stack software engineer with 1 year of
-          experience in the field. during the last two years, from front-end to
+          experience in the field. during the last one year, from front-end to
           to back-end I have experience of developing a lot of
           applications using modern JavaScript frameworks and libraries. As a
           developer who thrives in agile teams, I have worked successfully with
